@@ -26,6 +26,9 @@ export default function Header() {
           <Link href="/services" className="text-gray-800 hover:text-blue-600">
             Services
           </Link>
+          <Link href="/features" className="text-gray-800 hover:text-blue-600">
+            Features
+          </Link>
           <Link href="/research" className="text-gray-800 hover:text-blue-600">
             Research
           </Link>
@@ -40,7 +43,7 @@ export default function Header() {
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
-                  d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+                  d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828 4.828z"
                 />
               ) : (
                 <path
@@ -62,6 +65,9 @@ export default function Header() {
           </Link>
           <Link href="/services" className="block py-2 px-4 text-sm hover:bg-gray-200">
             Services
+          </Link>
+          <Link href="/features" className="block py-2 px-4 text-sm hover:bg-gray-200">
+            Features
           </Link>
           <Link href="/research" className="block py-2 px-4 text-sm hover:bg-gray-200">
             Research

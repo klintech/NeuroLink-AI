@@ -2,27 +2,32 @@
 
 import { motion } from "framer-motion"
 import { useState } from "react"
+import Link from "next/link"
 
 const features = [
   {
     title: "Neural Interface",
     description: "Direct brain-computer communication for seamless control and interaction.",
     icon: "🧠",
+    slug: "neural-interface",
   },
   {
     title: "Cognitive Enhancement",
     description: "AI-powered tools to boost memory, focus, and problem-solving abilities.",
     icon: "💡",
+    slug: "cognitive-enhancement",
   },
   {
     title: "Emotional Intelligence",
     description: "Advanced algorithms to understand and regulate emotional states.",
     icon: "😊",
+    slug: "emotional-intelligence",
   },
   {
     title: "Thought-to-Text",
     description: "Convert thoughts directly into written or spoken language.",
     icon: "💬",
+    slug: "thought-to-text",
   },
 ]
 
@@ -47,9 +52,9 @@ export default function Features() {
               <p className="text-gray-300">{feature.description}</p>
               {hoveredIndex === index && (
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mt-4">
-                  <a href="#" className="text-blue-400 hover:text-blue-300">
+                  <Link href={`/features/${feature.slug}`} className="text-blue-400 hover:text-blue-300">
                     Learn more →
-                  </a>
+                  </Link>
                 </motion.div>
               )}
             </motion.div>

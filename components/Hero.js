@@ -6,8 +6,8 @@ export default function Hero() {
       <div className="container mx-auto px-6 text-center">
         <h1 className="text-5xl font-bold mb-4">Advancing Human Potential</h1>
         <p className="text-xl mb-8">Pioneering brain-computer interfaces and AI-enhanced cognitive technologies</p>
-        <Link href="/services" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Explore Our Services
+        <Link href="/features" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Explore Our Features
         </Link>
       </div>
     </section>
